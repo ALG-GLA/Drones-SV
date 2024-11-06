@@ -1,0 +1,35 @@
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+img{
+    width: 500px; 
+    height: 300px; 
+    display: block;  
+    margin: 0 auto; 
+}
+ 
+.btn-1{
+    display: inline-block;
+    padding: 13px 10px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #099FA6;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-1:hover{
+    background-color: #266371;
+}
+
+
+

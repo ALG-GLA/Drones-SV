@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2? family= Oswald:wght@400;500;600;700 & family= Poppins:wght@300;400;500;600;700; 800 & mostrar=intercambiar');
+/*
+familia de fuentes: 'Oswald', sans-serif;
+familia de fuentes: 'Poppins', sans-serif;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*imagen de fonfo*/
+.header{
+    background-image: url(Imagenes/Fodo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Logo{
+    color: #d4ebe5;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.menu .Navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .Navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .Navbar ul li a:hover{
+    color: #266371;
+}
+
+.icons{
+    display: flex;
+}
+
+.icons i{
+    font-size: 25px;
+    color: #ffffff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.icons i:hover{
+    color:#266371 ;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icoco{
+     width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt {
+    width: 40%;
+}
+
+.header-txt h1{
+   font-size: 70px;
+   line-height: 80px;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #266371;
+   margin-bottom: 25px;
+   font-family: 'Oswald', sans-serif;
+}
+
+.header-txt p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #302b2b;
+    margin-bottom: 25px;
+}
+ 
+.btn-1{
+    display: inline-block;
+    padding: 13px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #099FA6;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    font-family: 'Poppins', sans-serif;
+}
+.btn-1:hover{
+    background-color: #266371;
+}
+
+/*imagen de inicio*/
+/*.Imagenes
+    width: 600px;
+    height: 380px;
+    position: relative;
+    right: 0;*/
+
+
+    .Imagenes {
+        width: 400px; /* Ajusta el ancho según sea necesario */
+        height: auto;
+        margin: 0; /* Elimina el margen para alinearlo correctamente */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .header-content {
+        display: flex;
+        justify-content: space-between; /* Espacio entre la descripción y la imagen */
+        align-items: center; /* Centra verticalmente los elementos */
+        flex-direction: row; /* Alinea los elementos en fila */
+        height: 100%; /* Asegúrate de que ocupe todo el alto disponible */
+        margin-top: 50px; /* Ajusta si es necesario para centrar verticalmente */
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: relative;
+    position: relative;
+}
+/*imagen del dron de inicio*/
+.swiper-slide h3{       
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+/*.swiper-slide img{
+    display: block;
+    width: 90%;
+    height: 100%;
+    object-fit: absolute;
+    border-radius: 50px;
+
+}
+
+*/
+
+.swiper-slide img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+    margin: auto; /* Centra la imagen dentro de su contenedor */
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rows{
+    width: 180px;
+    position: absolute;
+    right: 620px;
+    bottom: 280px;   
+}
+
+.swiper-button-prev {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.swiper-button-next {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+/*simbolos*/
+
+.swiper-button-prev::after{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.swiper-button-next::after{
+    font-size: 25px;
+    color: #c9c9c9;
+}
+
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label {
+        display:initial
+    }
+    .menu .Navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #3F3F3F48;
+        backdrop-filter: blur(5px);
+        display: none;
+    }
+
+    .menu .Navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .Navbar{
+        display: initial;
+    }
+
+    .icons {
+        display: none;
+    }
+    
+    .header{
+        padding: 80px 30px 50px 30px;
+        align-items: self-start;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-txt{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .header-txt h1{
+        margin-bottom: 10px;
+    }
+
+    .Imagenes{
+        position: initial;
+        width: 300px;
+        height: 300px;
+    }
+
+    .rows{
+        display: none;
+    }
+}
